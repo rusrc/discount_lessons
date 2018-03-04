@@ -2,7 +2,7 @@
 
 namespace WebApiApplication
 {
-    public class Db : List<string>
+    public class Database : List<string>
     {
     }
 }

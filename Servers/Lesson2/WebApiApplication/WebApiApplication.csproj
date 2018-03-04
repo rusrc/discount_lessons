@@ -5,10 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Db.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <Folder Include="wwwroot\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,14 @@
+*.ide
+*.lock
+*.suo
+
+**/*.ide
+**/*.lock
+**/*.suo
+
+*/bin
+*/obj
+
+# Visual Studio temp something
+*.vs/
+**/*.vs/

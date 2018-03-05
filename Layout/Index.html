@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>DISCOUNTAPP</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!--<link rel="stylesheet" href="node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/sandstone/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/readable/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css">-->
+
+
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="node_modules/jquery-chosen/chosen.min.css">
+    <link rel="stylesheet" href="node_modules/dropzone/dist/dropzone.css">
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <!--<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" async="" rel="stylesheet">-->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                </button>
+                    <a class="navbar-brand" href="index.html">DISCOUNTAPP</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#about">О проекте</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">example_user@gmail.com <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="addNewBrand.html">Добавить Бренд</a></li>
+                                <li><a href="addPromotionForBrand.html">Добавить Акцию</a></li>
+                                <li><a href="brandList.html">Ваши бренды</a></li>
+                                <li><a href="promotionList.html">Акции</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="login.html">Выход</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="h3">Акции</h1>
+                </div>
+            </div>
+            <form action="">
+                <div class="row well">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="form-group">
+                            <label for="select111" class="control-label"><i class="fa fa-calendar"></i> Выберите время акций</label>
+                            <select id="select111" class="form-control">
+                            <option>Текущие и будущие акции</option>
+                            <option>Акции за вчера 10 Февраля</option>
+                            <option>Акции за сегодня 11 Февраля</option>
+                            <option>Акции на завтра 12 Февраля</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="form-group">
+                            <label for="select111" class="control-label"><i class="fa fa-sort"></i> Новые или старые</label>
+                            <select id="select111" class="form-control">
+                                <option>Только новые</option>
+                                <option>Высокий рейтинг</option>
+                                <option>Низкий рейтинг</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="form-group">
+                            <label for="select111" class="control-label" style="color:transparent;"><i class="fa fa-search"></i> Найти</label>
+                            <input class="btn btn-primary btn-block btn-raised" type="submit" value="Найти акцию">
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="row well">
+                <section class="masonry">
+                    <div class="promotion-item post-box col-lg-4 col-md-4 col-sm-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <div class="list-group">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-4 col-sm-3 col-xs-2">
+                                            <a href="PromotionItem.html"><img class="circle img-responsive" src="https://picsum.photos/50/50/?random" alt="icon" /></a>
+                                        </div>
+                                        <div class="col-lg-9 col-md-8 col-sm-9 col-xs-10">
+                                            <h4 class="list-group-item-heading">ADIDAS</h4>
+                                            <p class="list-group-item-text">(30 дней - 90 дней)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <a href="PromotionItem.html"><img src="images/ring50.svg" alt="" data-original="https://picsum.photos/700/700/?random" class="img-lazy img-responsive img-thumbnail" /></a>
+                            </div>
+                            <div class="panel-footer" style="overflow: hidden;">
+                                <div class="btn-toolbar pull-right">
+                                    <div class="btn-group">
+                                        <div class="btn promotion-item__vehicleAvailable"><i class="fa fa-car" aria-hidden="true"></i></div>
+                                        <div class="btn promotion-item__vehicleAvailable"><i class="fa fa-truck"></i></div>
+                                        <div class="btn promotion-item__vehicleAvailable"><i class="fa fa-bus"></i></div>
+                                    </div>
+                                </div>
+                                <div class="btn-toolbar pull-right">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" class="btn promotion-item__btn"><i class="fa fa-comment"></i>&nbsp;<span class="badge">0</span></a>
+                                        <a href="javascript:void(0)" class="btn promotion-item__btn"><i class="fa fa-thumbs-o-down"></i>&nbsp;<span class="badge">0</span></a>
+                                        <a href="javascript:void(0)" class="btn promotion-item__btn"><i class="fa fa-thumbs-o-up"></i>&nbsp;<span class="badge">3</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="alert alert-info _h5">
+                                <ul class="list-unstyled">
+                                    <li>Цена за м<sup>2</sup> в день: 350 руб.</li>
+                                    <li>Срок размещения: 30 дней - 90 дней</li>
+                                </ul>
+                            </div>
+                            <div class="alert alert-danger h4"><i class="fa fa-clock-o"></i> Затраты <b>10 500</b> руб. в месяц</div>
+                        </div>
+                    </div>
+
+                    <div class="promotion-item post-box col-lg-4 col-md-4 col-sm-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <div class="list-group">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-4 col-sm-3 col-xs-2">
+                                            <a href="PromotionItem.html">
+                                                <img class="circle img-responsive" src="https://picsum.photos/50/50/?random" alt="icon" />
+                                            </a>
+                                        </div>
+                                        <div class="ccol-lg-9 col-md-8 col-sm-9 col-xs-10">
+                                            <h4 class="list-group-item-heading">Coca-Cola</h4>
+                                            <p class="list-group-item-text">(30 дней - 90 дней)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <a href="PromotionItem.html">
+                                    <img src="images/ring50.svg" alt="" data-original="https://picsum.photos/700/900/?random" class="img-lazy img-responsive img-thumbnail" />
+                                </a>
+                            </div>
+                            <div class="panel-footer" style="overflow: hidden;">
+                                <div class="btn-toolbar pull-right">
+                                    <div class="btn-group">
+                                        <div class="btn promotion-item__vehicleAvailable"><i class="fa fa-car" aria-hidden="true"></i></div>
+                                        <div class="btn promotion-item__vehicleAvailable"><i class="fa fa-truck"></i></div>
+                                        <div class="btn promotion-item__vehicleAvailable"><i class="fa fa-bus"></i></div>
+                                    </div>
+                                </div>
+                                <div class="btn-toolbar pull-right">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" class="btn promotion-item__btn"><i class="fa fa-comment"></i>&nbsp;<span class="badge">0</span></a>
+                                        <a href="javascript:void(0)" class="btn promotion-item__btn"><i class="fa fa-thumbs-o-down"></i>&nbsp;<span class="badge">0</span></a>
+                                        <a href="javascript:void(0)" class="btn promotion-item__btn"><i class="fa fa-thumbs-o-up"></i>&nbsp;<span class="badge">3</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="alert alert-info _h5">
+                                <ul class="list-unstyled">
+                                    <li>Цена за м<sup>2</sup> в день: 350 руб.</li>
+                                    <li>Срок размещения: 30 дней - 90 дней</li>
+                                </ul>
+                            </div>
+                            <div class="alert alert-danger h4"><i class="fa fa-clock-o"></i> Затраты <b>10 500</b> руб. в месяц</div>
+                        </div>
+                    </div>
+
+                    <div class="promotion-item post-box col-lg-4 col-md-4 col-sm-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <div class="list-group">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-4 col-sm-3 col-xs-2">
+                                            <a href="PromotionItem.html"><img class="circle img-responsive" src="https://picsum.photos/50/50/?random" alt="icon" /></a>
+                                        </div>
+                                        <div class="ccol-lg-9 col-md-8 col-sm-9 col-xs-10">
+                                            <h4 class="list-group-item-heading">Coca-Cola</h4>
+                                            <p class="list-group-item-text">(30 дней - 90 дней)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <a href="PromotionItem.html"><img src="images/ring50.svg" alt="" data-original="https://picsum.photos/700/850/?random" class="img-lazy img-responsive img-thumbnail" /></a>
+                            </div>
+                            <div class="panel-footer" style="overflow: hidden;">
+                                <div class="btn-toolbar pull-right">
+                                    <div class="btn-group">
+                                        <div class="btn promotion-item__vehicleAvailable"><i class="fa fa-car" aria-hidden="true"></i></div>
+                                        <div class="btn promotion-item__vehicleAvailable"><i class="fa fa-truck"></i></div>
+                                        <div class="btn promotion-item__vehicleAvailable"><i class="fa fa-bus"></i></div>
+                                    </div>
+                                </div>
+                                <div class="btn-toolbar pull-right">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" class="btn promotion-item__btn"><i class="fa fa-comment"></i>&nbsp;<span class="badge">0</span></a>
+                                        <a href="javascript:void(0)" class="btn promotion-item__btn"><i class="fa fa-thumbs-o-down"></i>&nbsp;<span class="badge">0</span></a>
+                                        <a href="javascript:void(0)" class="btn promotion-item__btn"><i class="fa fa-thumbs-o-up"></i>&nbsp;<span class="badge">3</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="alert alert-info _h5">
+                                <ul class="list-unstyled">
+                                    <li>Цена за м<sup>2</sup> в день: 350 руб.</li>
+                                    <li>Срок размещения: 30 дней - 90 дней</li>
+                                </ul>
+                            </div>
+                            <div class="alert alert-danger h4"><i class="fa fa-clock-o"></i> Затраты <b>10 500</b> руб. в месяц</div>
+                        </div>
+                    </div>
+
+                    <div class="promotion-item post-box col-lg-4 col-md-4 col-sm-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <div class="list-group">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-4 col-sm-3 col-xs-2">
+                                            <a href="PromotionItem.html"><img class="circle img-responsive" src="https://picsum.photos/50/50/?random" alt="icon" /></a>
+                                        </div>
+                                        <div class="ccol-lg-9 col-md-8 col-sm-9 col-xs-10">
+                                            <h4 class="list-group-item-heading">Coca-Cola</h4>
+                                            <p class="list-group-item-text">(30 дней - 90 дней)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <a href="PromotionItem.html">
+                                    <img src="images/ring50.svg" alt="" data-original="https://picsum.photos/700/830/?random" class="img-lazy img-responsive img-thumbnail" />
+                                </a>
+                            </div>
+                            <div class="panel-footer" style="overflow: hidden;">
+                                <div class="btn-toolbar pull-right">
+                                    <div class="btn-group">
+                                        <div class="btn promotion-item__vehicleAvailable"><i class="fa fa-car" aria-hidden="true"></i></div>
+                                        <div class="btn promotion-item__vehicleAvailable"><i class="fa fa-truck"></i></div>
+                                        <div class="btn promotion-item__vehicleAvailable"><i class="fa fa-bus"></i></div>
+                                    </div>
+                                </div>
+                                <div class="btn-toolbar pull-right">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" class="btn promotion-item__btn"><i class="fa fa-comment"></i>&nbsp;<span class="badge">0</span></a>
+                                        <a href="javascript:void(0)" class="btn promotion-item__btn"><i class="fa fa-thumbs-o-down"></i>&nbsp;<span class="badge">0</span></a>
+                                        <a href="javascript:void(0)" class="btn promotion-item__btn"><i class="fa fa-thumbs-o-up"></i>&nbsp;<span class="badge">3</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="alert alert-info _h5">
+                                <ul class="list-unstyled">
+                                    <li>Цена за м<sup>2</sup> в день: 350 руб.</li>
+                                    <li>Срок размещения: 30 дней - 90 дней</li>
+                                </ul>
+                            </div>
+                            <div class="alert alert-danger h4"><i class="fa fa-clock-o"></i> Затраты <b>10 500</b> руб. в месяц</div>
+                        </div>
+                    </div>
+
+                    <div class="promotion-item post-box col-lg-4 col-md-4 col-sm-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <div class="list-group">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-4 col-sm-3 col-xs-2">
+                                            <a href="PromotionItem.html"><img class="circle img-responsive" src="https://picsum.photos/50/50/?random" alt="icon" /></a>
+                                        </div>
+                                        <div class="ccol-lg-9 col-md-8 col-sm-9 col-xs-10">
+                                            <h4 class="list-group-item-heading">Coca-Cola</h4>
+                                            <p class="list-group-item-text">(30 дней - 90 дней)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <a href="PromotionItem.html"><img src="images/ring50.svg" alt="" data-original="https://picsum.photos/700/820/?random" class="img-lazy img-responsive img-thumbnail" /></a>
+                            </div>
+                            <div class="panel-footer" style="overflow: hidden;">
+                                <div class="btn-toolbar pull-right">
+                                    <div class="btn-group">
+                                        <div class="btn promotion-item__vehicleAvailable"><i class="fa fa-car" aria-hidden="true"></i></div>
+                                        <div class="btn promotion-item__vehicleAvailable"><i class="fa fa-truck"></i></div>
+                                        <div class="btn promotion-item__vehicleAvailable"><i class="fa fa-bus"></i></div>
+                                    </div>
+                                </div>
+                                <div class="btn-toolbar pull-right">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" class="btn promotion-item__btn"><i class="fa fa-comment"></i>&nbsp;<span class="badge">0</span></a>
+                                        <a href="javascript:void(0)" class="btn promotion-item__btn"><i class="fa fa-thumbs-o-down"></i>&nbsp;<span class="badge">0</span></a>
+                                        <a href="javascript:void(0)" class="btn promotion-item__btn"><i class="fa fa-thumbs-o-up"></i>&nbsp;<span class="badge">3</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="alert alert-info _h5">
+                                <ul class="list-unstyled">
+                                    <li>Цена за м<sup>2</sup> в день: 350 руб.</li>
+                                    <li>Срок размещения: 30 дней - 90 дней</li>
+                                </ul>
+                            </div>
+                            <div class="alert alert-danger h4"><i class="fa fa-clock-o"></i> Затраты <b>10 500</b> руб. в месяц</div>
+                        </div>
+                    </div>
+
+
+                </section>
+            </div>
+
+            <div class="row well">
+                <div class="col-lg-12">
+                    <ul class="pagination">
+                        <li class="disabled"><a href="javascript:void(0)">«</a></li>
+                        <li class="active"><a href="javascript:void(0)">1</a></li>
+                        <li><a href="javascript:void(0)">2</a></li>
+                        <li><a href="javascript:void(0)">3<div class="ripple-container"></div></a></li>
+                        <li><a href="javascript:void(0)">4</a></li>
+                        <li><a href="javascript:void(0)">5</a></li>
+                        <li><a href="javascript:void(0)">»</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap-material-design/dist/js/material.min.js"></script>
+    <script src="node_modules/jquery-lazyload/jquery.lazyload.js"></script>
+
+    <script src="http://masonry.desandro.com/masonry.pkgd.min.js"></script>
+    <script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $.material.init();
+
+            var $container = $('.masonry');
+            $container.imagesLoaded(function() {
+                $container.masonry({
+                    itemSelector: '.post-box'
+                });
+                $('img.img-lazy').addClass('not-loaded');
+                $('img.img-lazy.not-loaded').lazyload({
+                    effect: 'fadeIn',
+                    effectTime: 2000,
+                    threshold: 0,
+                    load: function() {
+
+                        // Disable trigger on this image
+                        $(this).removeClass("not-loaded");
+                        $container.masonry('reloadItems');
+                        $container.masonry('layout');
+                    }
+                });
+                $('img.not-loaded').trigger('scroll');
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>

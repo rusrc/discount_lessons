@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>DISCOUNTAPP</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!--<link rel="stylesheet" href="node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/sandstone/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/readable/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css">-->
+
+
+    <link rel="stylesheet" href="node_modules/font-awesome-4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" href="node_modules/jquery-chosen/chosen.min.css">
+    <link rel="stylesheet" href="node_modules/dropzone/dist/dropzone.css">
+    <link rel="stylesheet" href="node_modules/tree-multiselect/dist/jquery.tree-multiselect.min.css">
+    <!--<link rel="stylesheet" href="dist/css/style.min.css">-->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        </button>
+                    <a class="navbar-brand" href="index.html">DISCOUNTAPP</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#about">О проекте</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Профиль <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="login.html">Вход</a></li>
+                                <li><a href="registration.html">Регистрация</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 well">
+
+                    <form axtion="">
+                        <fieldset>
+                            <legend>
+                                <h3>Регистрация</h3>
+                            </legend>
+
+                            <div class="form-group label-floating is-empty">
+                                <label class="control-label" for="dateExpired">Укажите Ваш email</label>
+                                <input type="email" class="form-control" id="dateExpired">
+                                <p class="help-block">Например: example@mail.ru</p>
+                            </div>
+                            <div class="form-group label-floating is-empty">
+                                <label class="control-label" for="dateExpired">Ваш пароль</label>
+                                <input type="password" class="form-control" id="dateExpired">
+                            </div>
+                            <div class="form-group label-floating is-empty">
+                                <label class="control-label" for="dateExpired">Повторите пароль</label>
+                                <input type="password" class="form-control" id="dateExpired">
+                            </div>
+
+                            <button type="submit" class="btn btn-block btn-primary btn-raised"><b>Зарегистрировать</b></button>
+
+                        </fieldset>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap-material-design/dist/js/material.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $.material.init();
+        });
+    </script>
+</body>
+
+</html>

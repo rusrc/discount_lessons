@@ -1,0 +1,3 @@
+# Discountapp
+
+npm install

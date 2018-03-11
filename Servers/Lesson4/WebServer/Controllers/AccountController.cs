@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
-using WebServer.Models;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 using WebServer.ModelViews;
@@ -20,13 +17,10 @@ namespace WebServer.Controllers
     [Route("api/Account")]
     public class AccountController : Controller
     {
-
-        DbServerContext _context;
         UserManager<IdentityUser> _userManager;
 
-        public AccountController(DbServerContext context, UserManager<IdentityUser> userManager)
+        public AccountController(UserManager<IdentityUser> userManager)
         {
-            _context = context;
             _userManager = userManager;
         }
 

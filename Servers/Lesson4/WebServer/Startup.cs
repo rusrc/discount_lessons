@@ -1,15 +1,8 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Threading.Tasks;
-//using Microsoft.Extensions.Logging;
-//using Microsoft.Extensions.Options;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Identity;
-using WebServer.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -22,11 +15,10 @@ namespace WebServer
 {
     public class Startup
     {
-
         //1. Add constants
         #region Constans
         public string CONNECTION_STRING
-            = $"Data Source=localhost;Initial Catalog={nameof(DbServerContext)};Integrated Security=True";
+            = $"Data Source=localhost;Initial Catalog={nameof(AppDatabaseContext)};Integrated Security=True";
         public const string JWT_ISSUER = "MyAuthServer";
         public const string JWT_AUDIENCE = "http://localhost:60719"; //recipient or client (some use resource's URI other use scope names)
         public const string JWT_KEY = "b802bec8fd52b0a75f201d8b37274e1081c39b740293f765eae731f5a65ed1";
@@ -45,10 +37,10 @@ namespace WebServer
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DbServerContext>(option => option.UseSqlServer(CONNECTION_STRING));
+            services.AddDbContext<AppDatabaseContext>(option => option.UseSqlServer(CONNECTION_STRING));
 
             services.AddIdentity<IdentityUser, IdentityRole>()
-                    .AddEntityFrameworkStores<DbServerContext>()
+                    .AddEntityFrameworkStores<AppDatabaseContext>()
                     .AddDefaultTokenProviders();
 
             //https://blogs.msdn.microsoft.com/webdev/2017/04/06/jwt-validation-and-authorization-in-asp-net-core/
@@ -117,7 +109,6 @@ namespace WebServer
                 app.UseDeveloperExceptionPage();  
             }
 
-
             app.UseAuthentication();
 
             app.UseMvc();
@@ -142,6 +133,8 @@ namespace WebServer
                     await next();
                 }
             });
+
+
 
         }
     }

@@ -1,0 +1,5 @@
+# Discountapp
+
+npm install
+
+gulp

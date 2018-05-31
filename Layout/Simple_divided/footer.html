@@ -1,0 +1,40 @@
+ <!-- </main> -->
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/bootstrap-material-design/dist/js/material.min.js"></script>
+    <script src="../node_modules/jquery-lazyload/jquery.lazyload.js"></script>
+
+    <script src="http://masonry.desandro.com/masonry.pkgd.min.js"></script>
+    <script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $.material.init();
+
+            var $container = $('.masonry');
+            $container.imagesLoaded(function() {
+                $container.masonry({
+                    itemSelector: '.post-box'
+                });
+                $('img.img-lazy').addClass('not-loaded');
+                $('img.img-lazy.not-loaded').lazyload({
+                    effect: 'fadeIn',
+                    effectTime: 2000,
+                    threshold: 0,
+                    load: function() {
+
+                        // Disable trigger on this image
+                        $(this).removeClass("not-loaded");
+                        $container.masonry('reloadItems');
+                        $container.masonry('layout');
+                    }
+                });
+                $('img.not-loaded').trigger('scroll');
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>

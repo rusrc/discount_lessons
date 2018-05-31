@@ -1,0 +1,53 @@
+    <main>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="addNewBrand.html">Добавить Бренд</a></li>
+                        <li><a href="addPromotionForBrand.html">Добавить Акцию</a></li>
+                        <li><a href="brandList.html">Ваши бренды</a></li>
+                        <li><a href="promotionList.html">Акции</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6 col-md-6 well">
+                    <form action="">
+                        <fieldset>
+                            <legend>Добавить бренд</legend>
+                            <div class="form-group label-floating is-empty">
+                                <label class="control-label" for="dateExpired">Укажите название бренда</label>
+                                <input type="email" class="form-control" id="dateExpired">
+                                <!-- <p class="help-block">Например: your good life</p> -->
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div class="col-lg-3 col-md-3">
+                    <div class="form-group">
+                        <h4>Логотип бренда</h4>
+                    </div>
+                    <div class="form-group">
+                        <div class="dropzoneCustom__form" id="upload-widget" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <span>Нажмите или перетащите файл</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                    <input type="checkbox"><span><span class="check"></span></span>
+                                    Я прочитал(a) <a href="#">правила</a>
+                            </label>
+                        </div>
+                    </div>
+                    <input class="btn btn-block btn-primary btn-raised" type="submit" value="Добавить">
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    

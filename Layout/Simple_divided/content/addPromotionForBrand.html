@@ -1,0 +1,82 @@
+    <main>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 well-sm-visible well-xs-visible">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="addNewBrand.html">Добавить Бренд</a></li>
+                        <li class="active"><a href="addPromotionForBrand.html">Добавить Акцию</a></li>
+                        <li><a href="brandList.html">Ваши бренды</a></li>
+                        <li><a href="promotionList.html">Акции</a></li>
+                    </ul>
+                </div>
+
+                <form action="">
+                    <div class="col-lg-6 col-md-6 well">
+                        <!--<h3>Добавление нового магазина</h3>-->
+
+                        <fieldset>
+                            <legend>Добавить акцию</legend>
+
+                            <div class="form-group label-floating is-empty">
+                                <label class="control-label" for="oneMetreSquarePrice">Цена за квадратый метр (м<sup>2</sup>)</label>
+                                <input type="number" class="form-control" id="oneMetreSquarePrice">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label" for="brandId">Бренд</label>
+                                <select class="form-control" name="brandId">
+                                    <option value="0"></option>
+                                    <option value="1">Coca-Cola</option>
+                                    <option value="2">Adidas</option>
+                                </select>
+                                <span class="field-validation-valid text-danger"><!--Error message--></span>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label class="control-label" for="brandId">Изображение акции</label>
+                                        <div class="dropzoneCustom__form" id="upload-widget" method="post" enctype="multipart/form-data">
+                                            <div class="form-group">
+                                                <span>Нажмите или перетащите файл</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                    </div>
+                    <div class="col-lg-3 col-md-3 well-sm-visible well-xs-visible">
+                        <div class="form-group">
+                            <label class="control-label"><h4>Время размещения</h4></label>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="promotionMinDateCount"><b>Минимум дней</b></label>
+                            <input id="promotionDateStart" type="number" class="form-control">
+
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="promotionMaxDateCount"><b>Максимум дней</b></label>
+                            <input id="promotionDateEnd" type="number" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"><span><span class="check"></span></span>
+                                    Я прочитал(a) <a href="#">правила</a>
+                                    </label>
+
+                            </div>
+                        </div>
+                        <input class="btn btn-block btn-primary btn-raised" type="submit" value="Добавить">
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    

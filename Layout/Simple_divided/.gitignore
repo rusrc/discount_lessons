@@ -1,0 +1,6 @@
+/node_modules/
+/dist/*
+**/build/*
+/scripts/
+**/package-lock.json
+package-lock.json

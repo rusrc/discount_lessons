@@ -1,3 +1,9 @@
+# The tutorial how to creat the application with dotnet core WebApi and Angular 2+(6) from scratch.
+
+Let's imagine we've got the startup's idea and we gonna do the project to try it on. 
+For example the idea is to build B2C e-commerce project to offer aerography on vehicles as advertisement.
+Other words you got the car and you want to force the car to earn money for you. You are looking for proper advertisement for your car on the website that we gonna make.
+
 # Discount application lessons
 
 ## Server side (backend)

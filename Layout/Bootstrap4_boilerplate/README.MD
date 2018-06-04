@@ -1,5 +1,4 @@
-npm install
 
--npm install -g gulp
-
--gulp
+- npm install
+- npm install -g gulp
+- gulp

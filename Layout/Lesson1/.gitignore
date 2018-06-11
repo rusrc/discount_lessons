@@ -1,0 +1,6 @@
+/node_modules/
+/dist/*
+/scripts/
+package-lock.json
+/css/*
+/build/

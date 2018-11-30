@@ -1,4 +1,4 @@
-# The tutorial how to creat the application with dotnet core WebApi and Angular 2+(6) from scratch.
+# The tutorial how to creat the application with dotnet core WebApi and Angular 2+(7) from scratch.
 
 Let's imagine we've got the startup's idea and we gonna do the project to try it on. 
 For example the idea is to build B2C e-commerce project to offer aerography on vehicles as advertisement.

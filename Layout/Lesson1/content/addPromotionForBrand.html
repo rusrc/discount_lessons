@@ -3,10 +3,10 @@
         <div class="row">
             <div class="col-lg-3 col-md-3 well-sm-visible well-xs-visible">
                 <div class="list-group">
-                    <a href="addNewBrand.html" class="list-group-item list-group-item-action ">Добавить Бренд</a>
-                    <a href="addPromotionForBrand.html" class="list-group-item list-group-item-action active">Добавить Акцию</a>
-                    <a href="brandList.html" class="list-group-item list-group-item-action">Ваши бренды</a>
-                    <a href="promotionList.html" class="list-group-item list-group-item-action">Акции</a>
+                    <a href="addNewBrand.html" class="list-group-item list-group-item-action ">Add brand</a>
+                    <a href="addPromotionForBrand.html" class="list-group-item list-group-item-action active">Add promotion</a>
+                    <a href="brandList.html" class="list-group-item list-group-item-action">Your brands</a>
+                    <a href="promotionList.html" class="list-group-item list-group-item-action">Promotions</a>
                 </div>
             </div>
 
@@ -14,16 +14,16 @@
                 <!--<h3>Добавление нового магазина</h3>-->
 
                 <fieldset>
-                    <legend>Добавить акцию</legend>
+                    <legend>Add promotion</legend>
 
                     <div class="form-group label-floating is-empty">
-                        <label class="control-label" for="oneMetreSquarePrice">Цена за квадратый метр (м
+                        <label class="control-label" for="oneMetreSquarePrice">Price per square meter (m
                             <sup>2</sup>)</label>
                         <input type="number" class="form-control" id="oneMetreSquarePrice">
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label" for="brandId">Бренд</label>
+                        <label class="control-label" for="brandId">Brand</label>
                         <select class="form-control" name="brandId">
                             <option value="0"></option>
                             <option value="1">Coca-Cola</option>
@@ -39,10 +39,10 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="form-group ">
-                                <label class="control-label" for="brandId">Изображение акции</label>
+                                <label class="control-label" for="brandId">Image of promotion</label>
                                 <div class="dropzoneCustom__form jumbotron" id="upload-widget" method="post" enctype="multipart/form-data">
                                     <div class="form-group text-center">
-                                        <span>Нажмите или перетащите файл</span>
+                                        <span>Press to add photo</span>
                                     </div>
                                 </div>
                             </div>
@@ -55,19 +55,19 @@
             <div class="col-lg-3 col-md-3 well-sm-visible well-xs-visible">
                 <div class="form-group">
                     <label class="control-label">
-                        <h4>Время размещения</h4>
+                        <h4>Time of activity</h4>
                     </label>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="promotionMinDateCount">
-                        <b>Минимум дней</b>
+                        <b>Minimum days</b>
                     </label>
                     <input id="promotionDateStart" type="number" class="form-control">
 
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="promotionMaxDateCount">
-                        <b>Максимум дней</b>
+                        <b>Maximum days</b>
                     </label>
                     <input id="promotionDateEnd" type="number" class="form-control">
                 </div>
@@ -78,13 +78,13 @@
                             <span>
                                 <span class="check"></span>
                             </span>
-                            Я прочитал(a)
-                            <a href="#">правила</a>
+                            I agree with
+                            <a href="#">policy</a>
                         </label>
 
                     </div>
                 </div>
-                <input class="btn btn-block btn-primary btn-raised" type="submit" value="Добавить">
+                <input class="btn btn-block btn-primary btn-raised" type="submit" value="Save">
             </div>
 
         </div>
